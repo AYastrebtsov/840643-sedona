@@ -2,78 +2,97 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона Поиск жилья</title>
+    <title>Sedona</title>
   </head>
     
     <body>
         
         <nav class="site_navigation">
           <ul>
-              <li class="navigation_item navigation_item--item_1">информация</li>
-              <li class="navigation_item navigation_item--item_2">фото и видео</li>
+              <li class="navigation_item navigation_item--item_1"><a href="#">информацияБ</a></li>
+              <li class="navigation_item navigation_item--item_2"><a href="#">фото и видео</a></li>
               <li class="navigation_item navigation_item--3">
-                  <a href="#"><img src="img/" width="-" height="-" alt="main_page"></a></li>
-              <li class="navigation_item navigation_item--4">карта штата</li>
-              <li class="navigation_item navigation_item--5">гостиницы</li>
+                  <a href="index.html"><img src="http://placehold.it/150x100" alt="main_page"></a></li>
+              <li class="navigation_item navigation_item--4"><a href="#">карта штата</a></li>
+              <li class="navigation_item navigation_item--5"><a href="#">гостиницы</a></li>
           </ul>
       </nav>
         
 <!--КРАСНЫЙ БЛОК-->
-        
-        <section class="accomodations">
             
             <section class="hotel">
-                <img src="-" alt="amara resort & spa">
+                <div class="amara resort & spa">
+                    <img src="http://placehold.it/150x100" alt="amara resort & spa"></div>
                 <h2>amara resort & spa</h2>
-                <span class="accomodation_type type_hotel">гостиница</span>
-                <span class="price hotel_price">от 4000р</span>
-                <button class="about_button hotel_button">подробнее</button>
-                <button class="book_button book_hotel">забронировать</button>
-                <!--Не знаю, честно как разменить звезды, я так думаю они ведь еще и интерактивные должны быть-->
-                <p>Звёзды</p>
-                <span class="raiting hotel_raiting">рейтинг:8,5</span>
+                <span class="accomodation_type">гостиница</span>
+                <span class="accomodation_price">от 4000р</span>
+                <button class="about_button">подробнее</button>
+                <button class="book_button">забронировать</button>
+                <p>
+                <span class="stars">
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                </span>
+                </p>
+                <span class="accomodation raiting">рейтинг:8,5</span>
             </section>
             
             <section class="motel">
-                <img src="-" alt="desert quail inn">
+                <div class="desert quail inn">
+                    <img src="http://placehold.it/150x100" alt="desert quail inn"></div>
                 <h2>desert quail inn</h2>
-                <span class="accomodation_type type_motel">мотель</span>
-                <span class="price motel_price">от 3000р</span>
-                <button class="about_button motel_button">подробнее</button>
-                <button class="book_button book_motel">забронировать</button>
-                <p>Звёзды</p>
-                <span class="raiting motel_raiting">рейтинг:8,9</span>
+                <span class="accomodation_type">мотель</span>
+                <span class="accomodation_price">от 3000р</span>
+                <button class="about_button">подробнее</button>
+                <button class="book_button">забронировать</button>
+                <p>
+                <span class="stars">
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                </span>
+                </p>
+                <span class="accomodation raiting">рейтинг:8,9</span>
             </section>
             
             <section class="apartment">
-                <img src="-" alt="villas poco diablo">
+                <div class="villas poco diablo">
+                    <img src="http://placehold.it/150x100" alt="villas poco diablo"></div>
                 <h2>villas poco diablo</h2>
-                <span class="accomodation_type type_appartment">апартаменты</span>
-                <span class="price appartment_price">от 2000р</span>
-                <button class="about_button appartment_button">подробнее</button>
-                <button class="book_button book_appartment">забронировать</button>
-                <p>Звёзды</p>
-                <span class="raiting appartment_raiting">рейтинг:9,2</span>
+                <span class="accomodation_type">апартаменты</span>
+                <span class="accomodation_price">от 2000р</span>
+                <button class="about_button">подробнее</button>
+                <button class="book_button">забронировать</button>
+                <p>
+                <span class="stars">
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                </span>
+                </p>
+                <span class="accomodation raiting">рейтинг:9,2</span>
             </section>
         
-        </section>
         
         <footer class="main_footer">
               <span class="footer_hashtag">#visitsedona</span>
               
               <div class="footer_social">
                   <ul>
-                      <li><a class="social_network social_button1" href="#">Twitter</a></li>
-                      <li><a class="social_network social_button2" href="#">Facebook</a></li>
-                      <li><a class="social_network social_button3" href="#">YouTube</a></li>
+                      <li><a class="social_button button--1" href="#">Twitter</a></li>
+                      <li><a class="social_button button--2" href="#">Facebook</a></li>
+                      <li><a class="social_button button--3" href="#">YouTube</a></li>
                   </ul>
               </div>
                   
-                  <p class="footer_copyright">
-                      <span class="developer">website by</span>
-                      <a href="https://htmlacademy.ru"><img src="img/" width="-" height="-" alt="HTML Academy Logo"></a>
-                  </p>
-          
+                  <a class="footer_copyright" href="https://htmlacademy.ru/intensive/htmlcss">website by<img src="http://placehold.it/150x100" alt="HTML Academy Logo"></a>
           </footer>
     
     </body>
