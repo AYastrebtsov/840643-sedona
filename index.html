@@ -2,48 +2,49 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Sedona</title>
   </head>
     
   <body>
-      
+      <header class="main_navigation">
       <nav class="site_navigation">
           <ul>
-              <li class="navigation_item navigation_item--item_1">информация</li>
-              <li class="navigation_item navigation_item--item_2">фото и видео</li>
+              <li class="navigation_item navigation_item--item_1"><a href="#">информация</a></li>
+              <li class="navigation_item navigation_item--item_2"><a href="#">фото и видео</a></li>
               <li class="navigation_item navigation_item--3">
-                  <img src="img/" width="-" height="-" alt="Sedona Logo"></li>
-              <li class="navigation_item navigation_item--4">карта штата</li>
-              <li class="navigation_item navigation_item--5">гостиницы</li>
+                  <img src="http://placehold.it/150x100"></li>
+              <li class="navigation_item navigation_item--4"><a href="#">карта штата</a></li>
+              <li class="navigation_item navigation_item--5"><a href="#">гостиницы</a></li>
           </ul>
       </nav>
+      </header>
       
       <main class="container">
           
-          <header>
-          <h1 class="main_header">welcome to the gorgeous Sedona</h1>
-              <span class="motto">"because the Grand Canyon sucks!"</span>
-          </header>
+          <section class="introduction">
+          <img src="http://placehold.it/150x100" alt="welcome to the gorgeous Sedona" class="site_introduction">
+          <span class="_motto_introduction">"because the Grand Canyon sucks!"</span>
+          </section>
           
           <div class="we_better">
-          <span class="what_is_sedona">седона - небольшой городок в Аризоне, заслуживающий большего!</span>
-          <span class="reasons">рассмотрим 5 причин по которым седона круче, чем гранд каньон!</span>
+          <h2 class="what_is_sedona">седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <p class="reasons">рассмотрим 5 причин по которым седона круче, чем гранд каньон!</p>
           </div>
     
           
           <section class="appointment">
-              <span class="appointment_intro">заинтересовались?</span>
+              <p class="appointment_intro">заинтересовались?</p>
               <p class="appointment_info">укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-              <button class="appointment_search">поиск гостиниц в седоне</button>
+              <button type="submit" class="appointment_search">поиск гостиниц в седоне</button>
           </section>
           
           <section class="appointment_modal">
-              <p class="appointment_date arrival_date">дата заезда</p>
-              <p class="appointment_date departure_date">дата выезда</p>
+              <p class="appointment_date">дата заезда</p>
+              <p class="appointment_date">дата выезда</p>
+          </section>
              <section class="counters">
-                 <p class="counter adult_counter">взрослые:</p>
-                 <p class="counter children_counter">дети:</p>
-              </section>
+                 <p class="counter">взрослые:</p>
+                 <p class="counter">дети:</p>
           </section>
           
       </main>
@@ -53,17 +54,13 @@
               
               <div class="footer_social">
                   <ul>
-                      <li><a class="social_network social_button1" href="#">Twitter</a></li>
-                      <li><a class="social_network social_button2" href="#">Facebook</a></li>
-                      <li><a class="social_network social_button3" href="#">YouTube</a></li>
+                      <li><a class="social_button button--1" href="#">Twitter</a></li>
+                      <li><a class="social_button button--2" href="#">Facebook</a></li>
+                      <li><a class="social_button button--3" href="#">YouTube</a></li>
                   </ul>
               </div>
                   
-                  <p class="footer_copyright">
-                      <span class="developer">website by</span>
-                      <a href="https://htmlacademy.ru"><img src="img/" width="-" height="-" alt="HTML Academy Logo"></a>
-                  </p>
-          
+                  <a class="footer_copyright" href="https://htmlacademy.ru/intensive/htmlcss">website by<img src="http://placehold.it/150x100" alt="HTML Academy Logo"></a>
           </footer>
         
     </body>
