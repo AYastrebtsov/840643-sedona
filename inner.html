@@ -25,30 +25,30 @@
         <section class="accomodation-features">
             <img src="img/jpeg-sedona/blurried-background.jpg" width="1200" height="217" alt="blurried-background">
             <form action="https://echo.htmlacademy.ru" method="get">
+                
+                <h3 class="options">инфраструктура</h3>
 
-                <ul>
-                    <li><label><input type="checkbox" name="swimming-pool">бассейн
-                        </label></li>
-                    <li><label><input type="checkbox" name="parking">парковка
-                        </label></li>
-                    <li><label><input type="checkbox" name="wi-fi">wi-fi
-                        </label></li>
-                </ul>
-
-
-                <ul>
-                    <li><label><input type="checkbox" name="hotel">гостиница
-                        </label></li>
-                    <li><label><input type="checkbox" name="motel">мотель
-                        </label></li>
-                    <li><label><input type="checkbox" name="apartments">апартаменты
-                        </label></li>
-                </ul>
+                    <label><input type="checkbox" name="option" value="swimming-pool">бассейн
+                    </label>
+                    <label><input type="checkbox" name="option" value="parking">парковка
+                    </label>
+                    <label><input type="checkbox" name="option" value="wi-fi">wi-fi
+                    </label>
+                
+                <h3 class="accomodation-type">тип жилья</h3>
+                
+                    <label><input type="checkbox" name="accomodation-type__item" value="hotel">гостиница
+                    </label>
+                    <label><input type="checkbox" name="accomodation-type__item" value="motel">мотель
+                    </label>
+                    <label><input type="checkbox" name="accomodation-type__item" value="apartments">апартаменты
+                    </label>
 
                 <p class="range">стоимость в сутки:
-                    <span class="range__info">от 0 | до 3000</span>
-                    <button class="range__price--lowest" type="button"></button>
-                    <button class="range__price--highest" type="button"></button>
+                    <input type="number" name="min-price" value="min-price" placeholder="от 0">
+                    <input type="number" name="max-price" value="max-price" placeholder="до 3000">
+                    <button class="range_button range_button--min" type="button"></button>
+                    <button class="range_button range_button--max" type="button"></button>
                 </p>
 
                 <button class="button" type="submit">показать</button>
