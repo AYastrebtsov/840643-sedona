@@ -34,6 +34,69 @@
             <h2 class="slogan__header">седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
             <p class="slogan__reasons">рассмотрим 5 причин по которым седона круче, чем гранд каньон!</p>
           </div>
+              
+              <ul class="features">
+                  <li class="features__housing">
+                      <img src="img/svg-sedona/icon-1.svg" width="76" height="72" alt="house-icon">
+                      жильё
+                      <p class="features__description">рекомендуем пожить в настоящем мотеле, как в кино!</p>
+                  </li>
+
+                  <li class="features__food">
+                      <img src="img/svg-sedona/icon-2.svg" width="74" height="70" alt="present-icon">
+                      еда
+                      <p class="features__description">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                  </li>
+
+                  <li class="features__souvenirs">
+                      <img src="img/svg-sedona/icon-3.svg" width="64" height="76" alt="burger-icon">
+                      сувениры
+                      <p class="features__description">не только китайского, но и местного производства!</p>
+                  </li>
+
+              </ul>
+              
+              <ol class="reasons">
+
+                  <li class="reasons__item-1">
+                      <img src="img/jpeg-sedona/city.jpg" width="800" height="256" alt="sedona-city">
+                      <p class="reasons__header">настоящий городок</p>
+                      <p class="reasons__contents">
+                          <span class="reasons__number">-№1-</span>седона - не аттракцион для туристов, там течёт своя жизнь
+                      </p>
+                  </li>
+
+                  <li class="reasons__item-2">
+                      <img src="img/jpeg-sedona/bridge.jpg" width="800" height="256" alt="sedona-bridge">
+                      <p class="reasons__header">там есть мост дьявола</p>
+                      <p class="reasons__contents">
+                          <span class="reasons__number">-№2-</span>да, по нему можно пройти! если конечно вы осмелитесь
+                      </p>
+                  </li>
+
+                  <li class="reasons__item-3">
+                      <p class="reasons__header">небольшая прощадь</p>
+                      <p class="reasons__contents">
+                          <span class="reasons__number">-№3-</span>все достопримечательности находятся очень близко
+                      </p>
+                  </li>
+
+                  <li class="reasons__item-4">
+                      <p class="reasons__header">красивая дорога</p>
+                      <p class="reasons__contents">
+                          <span class="reasons__number">-№4-</span>ехать в сезону из лас-вегаса совсем не скучно!
+                      </p>
+                  </li>
+
+                  <li class="reasons__item-5">
+                      <p class="reasons__header">мало туристов</p>
+                      <p class="reasons__contents">
+                          <span class="reasons__number">-№5-</span>большинство едет в гранд каньон и толпится там
+                      </p>
+                  </li>
+
+            </ol>
+          
           
           <section class="appointment">
             <p class="appointment__intro">заинтересовались?</p>
@@ -42,14 +105,38 @@
           </section>
           
           <section class="modal"> 
-            <div class="appointment-modal">
-              <p class="appointment-modal__date">дата заезда</p>
-              <p class="appointment-modal__date">дата выезда</p>
-            </div>
-             <div class="counters">
-                 <p class="counters__adults">взрослые:</p>
-                 <p class="counters__children">дети:</p>
-             </div>
+            <form action="https://echo.htmlacademy.ru" method="get">
+
+                <p class="modal-appointment">
+                    <label>Дата заезда:
+                    <input type="date" name="arrival-date" value="">
+                    </label>
+                </p>
+
+                <p class="modal-appointment">
+                    <label>Дата выезда:
+                    <input type="date" name="departure-date" value=""></label>
+                </p>
+
+                <p class="modal__counter--adult">взрослые:
+                    <button class="modal__counter--minus" type="button">-</button>
+                    <span>2</span>
+                    <button class="modal__counter--plus" type="button">+</button>
+                </p>
+
+                <p class="modal__counter--children">дети:
+                    <button class="modal__counter--minus" type="button">-</button>
+                    <span>2</span>
+                    <button class="modal__counter--plus" type="button">+</button>
+                </p>
+
+                <button class="button" type="submit">найти</button>
+              </form>
+              
+          </section>
+          
+          <section class="map">
+              <img src="img/png-sedona/map.png" width="1200" height="473" alt="map">
           </section>
           
       </main>
