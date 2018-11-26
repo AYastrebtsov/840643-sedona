@@ -9,7 +9,7 @@
         
         <header class="main-header">
             
-            <a href="index.html"><img src="img/svg-sedona/logo-sedona.svg" width="138" height="171" alt="Sedona"></a>
+            <a href="index.html"><img src="img/svg-sedona/logo-sedona.svg" width="138" height="71" alt="Sedona"></a>
         
             <nav class="site-navigation">
                 <ul>
@@ -23,7 +23,6 @@
         </header>
         
         <section class="accomodation-features">
-            <img src="img/jpeg-sedona/blurried-background.jpg" width="1200" height="217" alt="blurried-background">
             <form action="https://echo.htmlacademy.ru" method="get">
                 
                 <h3 class="options">инфраструктура</h3>
@@ -37,18 +36,20 @@
                 
                 <h3 class="accomodation-type">тип жилья</h3>
                 
-                    <label><input type="checkbox" name="accomodation-type__item" value="hotel">гостиница
+                    <label><input type="checkbox" name="housing" value="hotel">гостиница
                     </label>
-                    <label><input type="checkbox" name="accomodation-type__item" value="motel">мотель
+                    <label><input type="checkbox" name="housing" value="motel">мотель
                     </label>
-                    <label><input type="checkbox" name="accomodation-type__item" value="apartments">апартаменты
+                    <label><input type="checkbox" name="housing" value="apartments">апартаменты
                     </label>
 
                 <p class="range">стоимость в сутки:
-                    <input type="number" name="min-price" value="min-price" placeholder="от 0">
-                    <input type="number" name="max-price" value="max-price" placeholder="до 3000">
-                    <button class="range_button range_button--min" type="button"></button>
-                    <button class="range_button range_button--max" type="button"></button>
+                    <label>от
+                        <input type="number" name="min-price" value="0"></label>
+                    <label>до
+                        <input type="number" name="max-price" value="3000"></label>
+                    <button class="range__button range__button--min" type="button"></button>
+                    <button class="range__button range__button--max" type="button"></button>
                 </p>
 
                 <button class="button" type="submit">показать</button>
@@ -69,8 +70,8 @@
                 </label></li>
             </ul>
   
-            <button class="results__button" type="button" name="up"><img src="img/svg-sedona/icon-up-dir.svg" width="11" height="10" alt="up-button"></button>
-            <button class="results__button" type="button" name="down"><img src="img/svg-sedona/icon-down-dir.svg" width="11" height="10" alt="down-button"></button>
+            <button class="results__button" type="button" name="up"></button>
+            <button class="results__button" type="button" name="down"></button>
   
         </section>
             
