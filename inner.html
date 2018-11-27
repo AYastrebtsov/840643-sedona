@@ -27,12 +27,12 @@
                 
                 <h3 class="options">инфраструктура</h3>
 
-                    <label><input type="checkbox" name="option" value="swimming-pool">бассейн
-                    </label>
-                    <label><input type="checkbox" name="option" value="parking">парковка
-                    </label>
-                    <label><input type="checkbox" name="option" value="wi-fi">wi-fi
-                    </label>
+                    <input type="checkbox" id="option1" name="option" value="swimming-pool">
+                    <label for="option1">бассейн</label>
+                    <input type="checkbox" id="option2" name="option" value="parking">
+                    <label for="option2">парковка</label>
+                    <input type="checkbox" id="option3" name="option" value="wi-fi">
+                    <label for="option3">wi-fi</label>
                 
                 <h3 class="accomodation-type">тип жилья</h3>
                 
@@ -47,12 +47,12 @@
                     
 
                 <p class="range">стоимость в сутки:
-                    <label>от
-                        <input type="number" name="min-price" value="0"></label>
-                    <label>до
-                        <input type="number" name="max-price" value="3000"></label>
-                    <button class="range__button range__button--min" type="button"></button>
-                    <button class="range__button range__button--max" type="button"></button>
+                        <input type="number" id="from" name="min-price" value="0">
+                        <label for="from">от</label>
+                        <input type="number" id="till" name="max-price" value="3000">
+                        <label for="till">до</label>
+                    <button class="range__button range__button--min visually-hidden" type="button">минимум</button>
+                    <button class="range__button range__button--max visually-hidden" type="button">максимум</button>
                 </p>
 
                 <button class="button" type="submit">показать</button>
@@ -65,12 +65,12 @@
             <p class="results__number">
     
             <ul>
-                <li><label><input type="radio" name="sort" value="price">по цене
-                    </label></li>
-                <li><label><input type="radio" name="sort" value="type">по типу
-                    </label></li>
-                <li><label><input type="radio" name="sort" value="rating">по рейтингу
-                </label></li>
+                <li><input type="radio" id="sort-item1" name="sort" value="price">
+                    <label for="sort-item1">по цене</label></li>
+                <li><input type="radio" id="sort-radio2" name="sort" value="type">
+                    <label for="sort-item2">по типу</label></li>
+                <li><input type="radio" id="sort-radio3" name="sort" value="rating">
+                    <label for="sort-item3">по рейтингу</label></li>
             </ul>
   
             <button class="results__button visually-hidden" type="button" name="up">вверх</button>
