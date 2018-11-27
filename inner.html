@@ -36,12 +36,15 @@
                 
                 <h3 class="accomodation-type">тип жилья</h3>
                 
-                    <label><input type="checkbox" name="housing" value="hotel">гостиница
-                    </label>
-                    <label><input type="checkbox" name="housing" value="motel">мотель
-                    </label>
-                    <label><input type="checkbox" name="housing" value="apartments">апартаменты
-                    </label>
+                    <input type="checkbox" id="option-hotel" name="housing" value="hotel">
+                    <label for="option-hotel">гостиница</label>
+                    
+                    <input type="checkbox" id="option-motel" name="housing" value="motel">
+                    <label for="option-motel">мотель</label>
+                    
+                    <input type="checkbox" id="option-apartments" name="housing" value="apartments">
+                    <label for="option-apartments">апартаменты</label>
+                    
 
                 <p class="range">стоимость в сутки:
                     <label>от
@@ -70,8 +73,8 @@
                 </label></li>
             </ul>
   
-            <button class="results__button" type="button" name="up"></button>
-            <button class="results__button" type="button" name="down"></button>
+            <button class="results__button visually-hidden" type="button" name="up">вверх</button>
+            <button class="results__button visually-hidden" type="button" name="down">вниз</button>
   
         </section>
             
@@ -147,9 +150,9 @@
               
               <div class="social">
                   <ul>
-                      <li><a class="social__button social__button--button-1" href="#">Twitter</a></li>
-                      <li><a class="social__button social__button--button-2" href="#">Facebook</a></li>
-                      <li><a class="social__button social__button--button-3" href="#">YouTube</a></li>
+                      <li><a class="social__button social__button--button-1 visually-hidden" href="#">Twitter</a></li>
+                      <li><a class="social__button social__button--button-2 visually-hidden" href="#">Facebook</a></li>
+                      <li><a class="social__button social__button--button-3 visually-hidden" href="#">YouTube</a></li>
                   </ul>
               </div>
                   
