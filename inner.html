@@ -27,7 +27,7 @@
         <section class="accomodation-features">
             <form action="https://echo.htmlacademy.ru" method="get">
                 
-                <h3 class="options">инфраструктура</h3>
+                <h3 class="options">инфраструктура:</h3>
 
                     <input type="checkbox" id="option1" name="option" value="swimming-pool">
                     <label for="option1">бассейн</label>
@@ -36,7 +36,7 @@
                     <input type="checkbox" id="option3" name="option" value="wi-fi">
                     <label for="option3">wi-fi</label>
                 
-                <h3 class="accomodation-type">тип жилья</h3>
+                <h3 class="accomodation-type">тип жилья:</h3>
                 
                     <input type="checkbox" id="option-hotel" name="housing" value="hotel">
                     <label for="option-hotel">гостиница</label>
@@ -49,23 +49,23 @@
                     
 
                 <p class="range">стоимость в сутки:
+                        <label for="from">от</label>    
                         <input type="number" id="from" name="min-price" value="0">
-                        <label for="from">от</label>
-                        <input type="number" id="till" name="max-price" value="3000">
                         <label for="till">до</label>
+                        <input type="number" id="till" name="max-price" value="3000">
                     <button class="range__button range__button--min" type="button"><span class="visually-hidden">минимум</span></button>
                     <button class="range__button range__button--max" type="button"><span class="visually-hidden">максимум</span></button>
                 </p>
-
-                <button class="button" type="submit">показать</button>
+                
+                <button class="button-inner" type="submit">показать</button>
   
             </form>
 
         </section>
 
         <section class="results">
-            <p class="results__number">
-    
+            <p class="results__number">найдено: 3</p>
+
             <ul>
                 <li><input type="radio" id="sort-item1" name="sort" value="price">
                     <label for="sort-item1">по цене</label></li>
@@ -111,7 +111,7 @@
                 <span class="accomodations__type">мотель</span>
                 <span class="accomodations__price">от 3000р</span>
                 <button type="button" class="accomodations__about-button">подробнее</button>
-                <button type="button" class="accomodations__about-button">забронировать</button>
+                <button type="button" class="accomodations__book-button">забронировать</button>
                 <p>
                  <span class="stars">
                     <span class="stars__item"></span>
@@ -132,7 +132,7 @@
                 <span class="accomodations__type">апартаменты</span>
                 <span class="accomodations__price">от 2000р</span>
                 <button type="button" class="accomodations__about-button">подробнее</button>
-                <button type="button" class="accomodations__about-button">забронировать</button>
+                <button type="button" class="accomodations__book-button">забронировать</button>
                 <p>
                  <span class="stars">
                     <span class="stars__item"></span>
