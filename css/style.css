@@ -1,0 +1,237 @@
+body {
+    padding: 0;
+    margin: 0;
+    
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.site-navigation__item--item-1 a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.site-navigation__item--item-1 a:hover {
+    color: #81b3d2;
+}
+
+.site-navigation__item--item-1 a:active {
+    color: #cacaca;
+}
+
+.site-navigation__item--item-2 a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.site-navigation__item--item-2 a:hover {
+    color: #81b3d2;
+}
+
+.site-navigation__item--item-2 a:active {
+    color: #cacaca;
+}
+
+.site-navigation {
+    font-weight: bold;
+    line-height: 26px;
+    color: #000000;
+}
+
+.site-navigation ul {
+    list-style: none;
+}
+
+.introduction {
+    background-image: url(../img/jpeg-sedona/background.jpg);
+    background-repeat: no-repeat;
+}
+
+.introduction img {
+    max-width: 459px;
+    height: auto;
+    background-repeat: no-repeat;
+}
+
+.slogan__header {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+}
+
+.reasons {
+    list-style: none;
+}
+
+.features {
+    list-style: none;
+}
+
+.slogan__reasons {
+    line-height: 26px;
+}
+
+.reasons__item {
+    background-color: #eeeeee;
+}
+
+.reasons__item .features {
+    background-color: #ffffff;
+}
+
+.reasons__wrapper {
+    background-color: #81b3d2;
+}
+
+.reasons__header {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 21px;
+}
+
+.reasons__header--color {
+    color: #ffffff;
+}
+
+.reasons__contents {
+    line-height: 21px;
+    color: #333333;
+}
+
+.reasons__contents--color {
+    color: #ffffff;
+}
+
+.appointment__intro {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 36px;
+}
+
+.appointment__info {
+    line-height: 24px;
+    color: #333333;
+}
+
+.appointment__search {
+    background: #766357;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+    color: #ffffff;
+}
+
+.appointment__search:hover {
+    background: #604e43;
+}
+
+.appointment__search:active {
+    background: 503e33;
+    color: #928a85;
+}
+
+.modal__modal-appointment {
+    font-weight: bold;
+    line-height: 26px;
+}
+
+.date {
+    background: #f2f2f2;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.date:hover {
+    background: #ebebeb;
+}
+
+.date:focus {
+    background: #ffffff;
+}
+
+.modal__modal-counter label {
+    font-weight: bold;
+}
+
+.modal__modal-counter {
+    font-weight: bold;
+}
+
+.modal__modal-counter--minus {
+    color: #a9a9a9;
+    background: #f2f2f2;
+}
+
+.modal__modal-counter--minus:hover {
+    color: #000000;
+}
+
+.modal__modal-counter--minus:active {
+    color: #81b3d2;
+}
+
+.modal__modal-counter--plus {
+    color: #a9a9a9;
+    background: #f2f2f2;
+}
+
+.modal__modal-counter--plus:hover {
+    color: #000000;
+}
+
+.modal__modal-counter--plus:active {
+    color: #81b3d2;
+}
+
+.modal__modal-counter input {
+    background: #f2f2f2;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+form .button {
+    background: #81b3d2;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+    color: #ffffff;
+}
+
+form .button:hover {
+    background: #669ec0;
+}
+
+form .button:active {
+    background: #5496bd;
+    color: #94b9d2;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+
+
+
+
+    
+    
+
+
+    
+    
+    
+    
+    
+    
+    
+
