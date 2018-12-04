@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <title>Sedona</title>
       <link href="css/normalize.css" rel="stylesheet">
       <link href="css/style.css" rel="stylesheet">
@@ -117,25 +118,25 @@
             <form action="https://echo.htmlacademy.ru" method="get">
                 
                 <label class="modal__modal-appointment">Дата заезда:
-                    <input type="text" name="arrival-date" class="date" value="24 апреля 2017">
+                    <input type="text" name="arrival-date" class="modal__form" value="24 апреля 2017">
                 </label>
 
                 <label class="modal__modal-appointment">Дата выезда:
-                    <input type="text" name="departure-date" class="date" value="4 июля 2017">
+                    <input type="text" name="departure-date" class="modal__form" value="4 июля 2017">
                 </label>
                 
-                <p class="modal__modal-counter">
+                <p class="modal__form">
                     <label for="count-adult">взрослые:</label>
-                    <button class="modal__modal-counter modal__modal-counter--minus" type="button"><span class="visually-hidden">убавить</span>-</button>
+                    <button class="modal__modal-counter" type="button"><span class="visually-hidden">убавить</span>-</button>
                     <input type="number" id="count-adult" name="adult-counter" value="2">
-                    <button class="modal__modal-counter modal__modal-counter--plus" type="button"><span class="visually-hidden">прибавить</span>+</button>
+                    <button class="modal__modal-counter" type="button"><span class="visually-hidden">прибавить</span>+</button>
                 </p>
 
-                <p class="modal__modal-counter">
+                <p class="modal__form">
                     <label for="count-children">дети:</label>
-                    <button class="modal__modal-counter modal__modal-counter--minus" type="button"><span class="visually-hidden">убавить</span>-</button>
+                    <button class="modal__modal-counter" type="button"><span class="visually-hidden">убавить</span>-</button>
                     <input type="number" id="count-children" name="children-counter" value="0">
-                    <button class="modal__modal-counter modal__modal-counter--plus" type="button"><span class="visually-hidden">прибавить</span>+</button>
+                    <button class="modal__modal-counter" type="button"><span class="visually-hidden">прибавить</span>+</button>
                 </p>
 
                 <button class="button-index" type="submit">найти</button>

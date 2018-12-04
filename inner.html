@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <title>Sedona</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -65,14 +66,15 @@
 
         <section class="results">
             <p class="results__number">найдено: 3</p>
+            <p class="results__sort">сортировка</p>
 
             <ul>
                 <li><input type="radio" id="sort-item1" name="sort" value="price">
-                    <label for="sort-item1">по цене</label></li>
+                    <label for="sort-item1" class="sort-label">по цене</label></li>
                 <li><input type="radio" id="sort-item2" name="sort" value="type">
-                    <label for="sort-item2">по типу</label></li>
+                    <label for="sort-item2" class="sort-label">по типу</label></li>
                 <li><input type="radio" id="sort-item3" name="sort" value="rating">
-                    <label for="sort-item3">по рейтингу</label></li>
+                    <label for="sort-item3" class="sort-label">по рейтингу</label></li>
             </ul>
   
             <button class="results__button" type="button" name="up"><span class="visually-hidden">вверх</span></button>

@@ -8,30 +8,17 @@ body {
     text-transform: uppercase;
 }
 
-.site-navigation__item--item-1 a {
-    text-decoration: none;
-    color: #000000;
-}
-
-.site-navigation__item--item-1 a:hover {
+.site-navigation__item a:hover {
     color: #81b3d2;
 }
 
-.site-navigation__item--item-1 a:active {
+.site-navigation__item a:active {
     color: #cacaca;
 }
 
-.site-navigation__item--item-2 a {
+.site-navigation__item a {
     text-decoration: none;
     color: #000000;
-}
-
-.site-navigation__item--item-2 a:hover {
-    color: #81b3d2;
-}
-
-.site-navigation__item--item-2 a:active {
-    color: #cacaca;
 }
 
 .site-navigation {
@@ -45,6 +32,7 @@ body {
 }
 
 .introduction {
+    background-color: #324e63;
     background-image: url(../img/jpeg-sedona/background.jpg);
     background-repeat: no-repeat;
 }
@@ -69,8 +57,17 @@ body {
     list-style: none;
 }
 
+.features__header {
+    color: #000000;
+}
+
+.features__description {
+    color: #333333;
+}
+
 .slogan__reasons {
     line-height: 26px;
+    color: #333333;
 }
 
 .reasons__item {
@@ -121,6 +118,7 @@ body {
     font-weight: bold;
     line-height: 26px;
     color: #ffffff;
+    text-transform: uppercase;
 }
 
 .appointment__search:hover {
@@ -128,8 +126,8 @@ body {
 }
 
 .appointment__search:active {
-    background: 503e33;
-    color: #928a85;
+    background: #503e33;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .modal__modal-appointment {
@@ -137,7 +135,7 @@ body {
     line-height: 26px;
 }
 
-.date {
+.modal__form {
     background: #f2f2f2;
     font-size: 14px;
     font-weight: bold;
@@ -158,39 +156,16 @@ body {
 
 .modal__modal-counter {
     font-weight: bold;
-}
-
-.modal__modal-counter--minus {
     color: #a9a9a9;
     background: #f2f2f2;
 }
 
-.modal__modal-counter--minus:hover {
+.modal__modal-counter:hover {
     color: #000000;
 }
 
-.modal__modal-counter--minus:active {
+.modal__modal-counter:active {
     color: #81b3d2;
-}
-
-.modal__modal-counter--plus {
-    color: #a9a9a9;
-    background: #f2f2f2;
-}
-
-.modal__modal-counter--plus:hover {
-    color: #000000;
-}
-
-.modal__modal-counter--plus:active {
-    color: #81b3d2;
-}
-
-.modal__modal-counter input {
-    background: #f2f2f2;
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
 }
 
 .button-index {
@@ -199,6 +174,7 @@ body {
     font-weight: bold;
     line-height: 26px;
     color: #ffffff;
+    text-transform: uppercase;
 }
 
 .button-index:hover {
@@ -207,21 +183,25 @@ body {
 
 .button-index:active {
     background: #5496bd;
-    color: #94b9d2;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 footer a {
     text-decoration: none;
     color: #000000;
+    line-height: 26px;
 }
 
-.visually-hidden {
-    display: none;
+.main-footer__hashtag {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
 }
 
 /*--------------inner----------------*/
 
 .accomodation-features {
+    background-color: #324e63;
     background-image: url(../img/jpeg-sedona/blurried-background.jpg);
     color: #ffffff;
     line-height: 21px;
@@ -240,10 +220,11 @@ footer a {
 }
 
 .button-inner {
-    background: #8f8787; 
+    background: transparent; 
     font-size: 14px;
     line-height: 21px;
     color: #ffffff; 
+    text-transform: uppercase;
 }
 
 .button-inner:hover {
@@ -257,21 +238,38 @@ footer a {
     line-height: 26px;
 }
 
+.results__sort { 
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.sort-label {
+    color: #cacaca;
+    font-size: 12px;
+    border-bottom: 1px dotted #81b3d2;
+}
+
+.sort-label:hover {
+    color: #81b3d2;
+}
+
+.sort-label:active {
+    color: #000000;
+    border-bottom: none;
+}
+
+.accomodations {
+    line-height: 21px;
+}
+
 .accomodations__header {
     font-size: 21px;
     font-weight: bold;
     line-height: 26px;
 }
 
-.acconodation__type {
-    line-height: 21px;
-}
-
-.accomodation__price {
-    line-height: 21px;
-}
-
 .accomodations__raiting {
+    color: #666666;
     line-height: 21px;
     background: #f2f2f2;
 }
@@ -279,6 +277,7 @@ footer a {
 .accomodations__about-button {
     background: #81b3d2;
     line-height: 21px;
+    font-weight: bold;
     color: #ffffff;
     text-transform: uppercase;
 }
@@ -289,14 +288,16 @@ footer a {
 
 .accomodations__about-button:active {
     background: #5496bd;
-    color: #94b9d2;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .accomodations__book-button {
     background: #766357;
     line-height: 21px;
+    font-weight: bold;
     color: #ffffff;
     text-transform: uppercase;
+    
 }
 
 .accomodations__book-button:hover {
@@ -305,27 +306,19 @@ footer a {
 
 .accomodations__book-button:active {
     background: #503e33;
-    color: #928a85;
+    color: rgba(255, 255, 255, 0.3);
 }
-    
 
-    
+.accomodations__header {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+}
 
+.accomodations__header:hover {
+    color: #81b3d2;
+}
 
-    
-
-
-
-
-    
-    
-
-
-    
-    
-    
-    
-    
-    
-    
-
+.accomodation__header:active {
+    color: #cacaca;
+}
