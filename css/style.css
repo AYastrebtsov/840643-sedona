@@ -112,76 +112,72 @@ body {
     color: #333333;
 }
 
-.appointment__search {
+.element1 {
     background: #766357;
-    font-size: 21px;
-    font-weight: bold;
-    line-height: 26px;
     color: #ffffff;
+    font-weight: bold;
     text-transform: uppercase;
 }
 
-.appointment__search:hover {
+.element1__index {
+line-height: 26px;
+font-size: 21px;
+}
+
+.element1:hover {
     background: #604e43;
 }
 
-.appointment__search:active {
+.element1:active {
     background: #503e33;
     color: rgba(255, 255, 255, 0.3);
 }
 
-.modal__modal-appointment {
+.modal__info-input {
+    background: #f2f2f2;
     font-weight: bold;
     line-height: 26px;
 }
 
-.modal__form {
-    background: #f2f2f2;
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.date:hover {
+.modal__info-input:hover {
     background: #ebebeb;
 }
 
-.date:focus {
+.modal__info-input:focus {
     background: #ffffff;
 }
 
-.modal__modal-counter label {
-    font-weight: bold;
-}
-
-.modal__modal-counter {
-    font-weight: bold;
-    color: #a9a9a9;
+.modal__info-button {
     background: #f2f2f2;
+    color: #a9a9a9;
 }
 
-.modal__modal-counter:hover {
+.modal__info-button:hover {
     color: #000000;
 }
 
-.modal__modal-counter:active {
+.modal__info-button:active {
     color: #81b3d2;
 }
 
-.button-index {
+
+.element2 {
     background: #81b3d2;
-    font-size: 21px;
-    font-weight: bold;
-    line-height: 26px;
     color: #ffffff;
+    font-weight: bold;
     text-transform: uppercase;
 }
 
-.button-index:hover {
+.element2__index {
+font-size: 21px;
+line-height: 26px;
+}
+
+.element2:hover {
     background: #669ec0;
 }
 
-.button-index:active {
+.element2:active {
     background: #5496bd;
     color: rgba(255, 255, 255, 0.3);
 }
@@ -196,6 +192,15 @@ footer a {
     font-size: 21px;
     font-weight: bold;
     line-height: 26px;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  …
 }
 
 /*--------------inner----------------*/
@@ -266,6 +271,16 @@ footer a {
     font-size: 21px;
     font-weight: bold;
     line-height: 26px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.accomodations__header:hover {
+    color: #81b3d2;
+}
+
+.accomodations__header:active {
+    color: #cacaca;
 }
 
 .accomodations__raiting {
@@ -274,39 +289,13 @@ footer a {
     background: #f2f2f2;
 }
 
-.accomodations__about-button {
-    background: #81b3d2;
-    line-height: 21px;
-    font-weight: bold;
-    color: #ffffff;
-    text-transform: uppercase;
+.element2_inner {
+Font-size: 14px;
+Line-height: 21px;
 }
 
-.accomodations__about-button:hover {
-    background: #669ec0;
-}
-
-.accomodations__about-button:active {
-    background: #5496bd;
-    color: rgba(255, 255, 255, 0.3);
-}
-
-.accomodations__book-button {
-    background: #766357;
-    line-height: 21px;
-    font-weight: bold;
-    color: #ffffff;
-    text-transform: uppercase;
-    
-}
-
-.accomodations__book-button:hover {
-    background: #604e43;
-}
-
-.accomodations__book-button:active {
-    background: #503e33;
-    color: rgba(255, 255, 255, 0.3);
+.element1__inner {
+line-height: 21px;
 }
 
 .accomodations__header {
@@ -315,10 +304,3 @@ footer a {
     line-height: 26px;
 }
 
-.accomodations__header:hover {
-    color: #81b3d2;
-}
-
-.accomodation__header:active {
-    color: #cacaca;
-}
