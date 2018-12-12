@@ -43,8 +43,6 @@ body {
 }
 
 .introduction img {
-    max-width: 459px;
-    height: 510px;
     background-repeat: no-repeat;
 }
 
@@ -52,6 +50,9 @@ body {
     font-size: 21px;
     font-weight: bold;
     line-height: 26px;
+    max-width: 440px;
+    margin-left: auto;
+    margin-right: auto
 }
 
 .reasons {
@@ -313,6 +314,25 @@ line-height: 21px;
 /*сетка*/
 
 /*главня*/
+
+.site-navigation ul {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.site-navigation__item {
+    width: 25%
+}
+
+.site-navigation__item--item-1 {
+    text-align: left;
+}
+
+.site-navigation__item--item-2 {
+    text-align: right;
+}
+
 .logo {
    margin-left: auto;
    margin-right: auto;
@@ -320,19 +340,13 @@ line-height: 21px;
    margin-bottom: -71px;
 }
 
-.site-navigation ul {
-    display: flex;
-    height: 56px;
-    margin: 0px;
-    padding: 0px;
-    justify-content: space-around;
-    align-items: center; 
-}
-
 .intro__image {
-    width: 459px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 370px;
+    padding-right: 370px;
+    padding-top: 60px;
+    padding-bottom: 80px;
 }
 
 .introduction {
@@ -340,13 +354,7 @@ line-height: 21px;
 }
 
 .slogan__header {
-    display: flex;
-    width: 636px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    margin-bottom: 35px;
-    justify-content: center;
+    text-align: center;
 }
 
 .slogan__reasons {
@@ -361,20 +369,33 @@ line-height: 21px;
 .reasons {
     padding-left: 0px;
     display: flex;
-    flex-direction: column;
+    flex-direction: colum;
+    flex-wrap: wrap;
     margin-bottom: 50px;
 }
 
 .reasons__item {
     display: flex;
+    padding-left: 0px;
+}
+
+.reasons__item--mod {
+    width: 400px;
+    min-height: 256px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .reasons__wrapper {
-    display: flex;
-    width: 400px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+    min-width: 400px;
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+
 }
 
 .reasons__contents {
@@ -385,15 +406,22 @@ line-height: 21px;
 
 .features {
     display: flex;
-    height: 330px;
-    justify-content: space-around;
-    align-items: center;
+    padding-left: 0px;
+    flex-wrap: wrap;
 }
 
-.appointment {
+.features__attraction {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding-left: 0px;
+    width: 400px;
+    min-height: 330px;
+}
+
+.appointment {
+    text-align: center;
 }
 
 .appointment__intro {
@@ -406,40 +434,29 @@ line-height: 21px;
 }
 
 .dates {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    margin-left: 350px;
+    margin-right: 350px;
 }
 
 .counters {
-    display: flex;
-    justify-content: center;
+    margin-left: 350px;
+    margin-right: 320px;
 }
 
 .find-button {
-    display: flex;
-    justify-content: center;
+    margin-left: 550px;
+    margin-right: 550px;
+    
 }
 
 .main-footer {
     display: flex;
     justify-content: space-around;
-    margin-top: 80px;
+    padding-top: 80px;
 }
 
 
 /*внутренняя*/
-
-.find-form {
-    display: flex;
-}
-
-.chekboxes {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-}
 
 .price {
     width: 500px;
@@ -487,17 +504,3 @@ ul li {
     margin: 0;
     margin-left: auto;
 }
-    
-    
-    
-
-
-
-
-
-
-    
-
-
-
-
