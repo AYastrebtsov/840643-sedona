@@ -40,6 +40,7 @@ body {
     background-color: #324e63;
     background-image: url(../img/jpeg-sedona/background.jpg);
     background-repeat: no-repeat;
+    max-width: 1197px;
 }
 
 .introduction img {
@@ -65,10 +66,37 @@ body {
 
 .features__header {
     color: #000000;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.features__header::before{
+    content: "";
+    display: block;
+    background-image: url(../img/svg-sedona/icon-1.svg);
+    background-repeat: no-repeat;
+    width: 75px;
+    height: 72px;
+    margin-bottom: 45px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features__header--2::before {
+    background-image:url(../img/svg-sedona/icon-3.svg);
+}
+
+.features__header--3::before {
+    background-image:url(../img/svg-sedona/icon-2.svg);
+    height: 76px;
 }
 
 .features__description {
     color: #333333;
+    max-width: 285px;
+    text-align: center;
+    margin: 0px;
 }
 
 .slogan__reasons {
@@ -86,12 +114,19 @@ body {
 
 .reasons__wrapper {
     background-color: #81b3d2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .reasons__header {
     font-size: 21px;
     font-weight: bold;
     line-height: 21px;
+    max-width: 150px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 65px;
 }
 
 .reasons__header--color {
@@ -101,6 +136,15 @@ body {
 .reasons__contents {
     line-height: 21px;
     color: #333333;
+    text-align: center;
+    margin: 0px;
+    position: relative;
+}
+
+.reasons__number {
+    position: absolute;
+    top: -45px;
+    left: 125px;
 }
 
 .reasons__contents--color {
@@ -126,8 +170,14 @@ body {
 }
 
 .element1__index {
-line-height: 26px;
-font-size: 21px;
+    width: 568px;
+    min-height: 86px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 26px;
+    font-size: 21px;
+    text-align: center;
+    border: 0px;
 }
 
 .element1:hover {
@@ -137,6 +187,14 @@ font-size: 21px;
 .element1:active {
     background: #503e33;
     color: rgba(255, 255, 255, 0.3);
+}
+
+.modal {
+    max-width: 568px;
+    margin-left: 316px;
+    margin-right: 316px;
+    position: absolute;
+    background-color: #ffffff;
 }
 
 .modal__info-input {
@@ -166,7 +224,6 @@ font-size: 21px;
     color: #81b3d2;
 }
 
-
 .element2 {
     background: #81b3d2;
     color: #ffffff;
@@ -175,14 +232,23 @@ font-size: 21px;
 }
 
 .element2__index {
-font-size: 21px;
-line-height: 26px;
+    width: 458px;
+    min-height: 58px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 55px;
+    margin-bottom: 55px;
+    margin-left: 55px;
+    margin-right: 55px;
+    line-height: 26px;
+    font-size: 21px;
+    text-align: center;
+    border: 0px;
 }
 
 .map {
     background-image: url(../img/png-sedona/map.png);
-    padding-top: 237px;
-    padding-bottom: 237px;
+    min-height: 593px;
 }
 
 .element2:hover {
@@ -202,6 +268,7 @@ footer a {
 
 .social {
     display: flex;
+    opacity: 1;
 }
 
 .social li {
@@ -209,6 +276,8 @@ footer a {
     list-style: none;
     margin: 10px;
     padding: 10px;
+    width: 45px;
+    height: 45px;
 }
 
 .main-footer__hashtag {
@@ -335,8 +404,8 @@ line-height: 21px;
 .site-navigation ul {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 73px;
+    padding-right: 73px;
 }
 
 .site-navigation__item {
@@ -365,6 +434,18 @@ line-height: 21px;
     padding-top: 60px;
     padding-bottom: 80px;
     max-width: 459px;
+    position: relative;
+}
+
+.intro__image::after {
+    content: "";
+    position: absolute;
+    left: -371px;
+    top: 440px;
+    width: 1201px;
+    height: 59px;
+    background-image: url(../img/png-sedona/mask.png);
+    z-index: 2;
 }
 
 .introduction {
@@ -373,6 +454,7 @@ line-height: 21px;
 
 .slogan__header {
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .slogan__reasons {
@@ -400,7 +482,6 @@ line-height: 21px;
 .reasons__item--mod {
     width: 400px;
     min-height: 256px;
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -426,16 +507,18 @@ line-height: 21px;
     display: flex;
     padding-left: 0px;
     flex-wrap: wrap;
+    align-items: baseline;
 }
 
 .features__attraction {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center flex-start;
     padding-left: 0px;
+    padding-top: 60px;
+    padding-bottom: 85px;
     width: 400px;
-    min-height: 330px;
 }
 
 .appointment {
@@ -449,32 +532,122 @@ line-height: 21px;
 .appointment__info {
     margin-top: 0px;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 435px;
 }
 
 .dates {
-    margin-left: 350px;
-    margin-right: 350px;
+    margin-top: 55px;
+    margin-left: 55px;
+    margin-right: 55px;
+    display: flex;
+    flex-direction: column;
+}
+
+.date {
+    margin-bottom: 30px;
+}
+
+.modal__info-input {
+    border: 0px;
+    margin-left: 15px;
+    padding-left: 12px;
+    height: 38px;
+    width: 336px;
+}
+
+.modal__info-input-2 {
+    border: 0px;
+    width: 38px;
+    margin-left: 0px;
+    height: 38px;
+    padding: 0px;
+    text-align: center;
 }
 
 .counters {
     display: flex;
-    margin-left: 350px;
-    margin-right: 320px;
+    margin-left: 55px;
+    margin-right: 55px;
 }
 
-.find-button {
-    margin-left: 550px;
-    margin-right: 550px;
-    
+.modal__info-button {
+    margin-left: 35px;
+    border: 0px;
+    height: 38px;
+    width: 38px;
+}
+
+.modal__info-button--second {
+    margin-left: 0px;
+}
+
+.children__counter {
+    margin-left: 35px;
+}
+
+.modal__info-button-2 {
+    margin-left: 27px;
 }
 
 .main-footer {
     display: flex;
-    justify-content: space-around;
-    padding-top: 80px;
+    align-items: center;
+    min-height: 120px;
+    margin-top: -120px;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
+.main-footer__hashtag {
+    margin-left: 130px;
+}
 
+.social {
+    margin-left: 200px;
+    padding-left: 0px;
+}
+
+.social__button svg {
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+}
+
+.social li:hover {
+    background-color: #669ec0;
+}
+
+.social li:active {
+    background-color: #5496bd;
+}
+
+li:active path {
+    opacity: 0.3;
+}
+
+.copyright {
+    margin-left: 228px;
+    position: relative;
+    padding-right: 10px;
+}
+
+.copyright svg {
+    position: absolute;
+    left: 85px;
+    top: -5px;
+    width: 120px;
+    height: 40px;
+}
+
+.copyright:hover path {
+    fill: #81b3d2;
+}
+
+.copyright:active path {
+    fill: #bdbbbc;
+}
+    
 /*внутренняя*/
 
 .price {
