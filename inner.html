@@ -22,38 +22,38 @@
                     <li class="site-navigation__item site-navigation__item--item-1"><a href="#">информация</a></li>
                     <li class="site-navigation__item site-navigation__item--item-1"><a href="#">фото и видео</a></li>
                     <li class="site-navigation__item site-navigation__item--item-2"><a href="#">карта штата</a></li>
-                    <li class="site-navigation__item site-navigation__item--item-2"><a href="#">гостиницы</a></li>
+                    <li class="site-navigation__item site-navigation__item--item-2 site-navigation__item--item-inner"><a href="#">гостиницы</a></li>
                 </ul>
             </nav>
           
         </header>
         
         <section class="accomodation-features">
+            
             <form action="https://echo.htmlacademy.ru" method="get">
-                
                 
                 <div class="accomodation-wrapper">
                 <h3 class="options">инфраструктура:</h3>
 
-                    <input type="checkbox" id="option1" name="option" value="swimming-pool">
-                    <label for="option1" class="tet">бассейн</label>
-                    <input type="checkbox" id="option2" name="option" value="parking">
-                    <label for="option2">парковка</label>
-                    <input type="checkbox" id="option3" name="option" value="wi-fi">
-                    <label for="option3">wi-fi</label>
+                    <input type="checkbox" class="option--check visually-hidden" id="option1" name="option" value="swimming-pool">
+                    <label for="option1" class="option--item">бассейн</label>
+                    <input type="checkbox" class="option--check visually-hidden" id="option2" name="option" value="parking">
+                    <label for="option2" class="option--item">парковка</label>
+                    <input type="checkbox" class="option--check visually-hidden" id="option3" name="option" value="wi-fi">
+                    <label for="option3" class="option--item">wi-fi</label>
                 </div>
                 
                 <div class="accomodation-wrapper">
                 <h3 class="accomodation-type">тип жилья:</h3>
                 
-                    <input type="checkbox" id="option-hotel" name="housing" value="hotel">
-                    <label for="option-hotel">гостиница</label>
+                    <input type="checkbox" class="option--check visually-hidden" id="option-hotel" name="housing" value="hotel">
+                    <label for="option-hotel" class="option--item">гостиница</label>
                     
-                    <input type="checkbox" id="option-motel" name="housing" value="motel">
-                    <label for="option-motel">мотель</label>
+                    <input type="checkbox" class="option--check visually-hidden" id="option-motel" name="housing" value="motel">
+                    <label for="option-motel" class="option--item">мотель</label>
                     
-                    <input type="checkbox" id="option-apartments" name="housing" value="apartments">
-                    <label for="option-apartments">апартаменты</label>
+                    <input type="checkbox" class="option--check visually-hidden" id="option-apartments" name="housing" value="apartments">
+                    <label for="option-apartments" class="option--item">апартаменты</label>
                 </div>
                     
                     <div class="price">
@@ -77,17 +77,20 @@
             <p class="results__number">найдено: 3</p>
             <p class="results__sort">сортировка:</p>
 
-            <ul>
-                <li><input type="radio" id="sort-item1" name="sort" value="price">
+            <ul class="results__options">
+                <li><input type="radio" class="sorting visually-hidden" id="sort-item1" name="sort" value="price">
                     <label for="sort-item1" class="sort-label">по цене</label></li>
-                <li><input type="radio" id="sort-item2" name="sort" value="type">
+                <li><input type="radio" class="sorting visually-hidden" id="sort-item2" name="sort" value="type">
                     <label for="sort-item2" class="sort-label">по типу</label></li>
-                <li><input type="radio" id="sort-item3" name="sort" value="rating">
+                <li><input type="radio" class="sorting visually-hidden" id="sort-item3" name="sort" value="rating">
                     <label for="sort-item3" class="sort-label">по рейтингу</label></li>
             </ul>
                 <div class="results-buttons">
-            <button class="results__button" type="button" name="up"><span class="visually-hidden">вверх</span></button>
-            <button class="results__button" type="button" name="down"><span class="visually-hidden">вниз</span></button>
+                    <input type="radio" class="sort visually-hidden" id="sort-up" name="sorting-direction" value="up">
+                    <label for="sort-up" class="sorting-label"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="currentColor" d="M5.5 0L0 10h11z"/></svg></label>
+                    
+                    <input type="radio" class="sort visually-hidden" id="sort-down" name="sorting-direction" value="down">
+                    <label for="sort-down" class="sorting-label"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="currentColor" d="M5.5 10L0 0h11"/></svg></label>
             </div>
   
         </section>
@@ -110,7 +113,7 @@
                             <span class="accomodations__price">от 4000р</span>
                         </div>
                     
-                        <div class="ref">
+                        <div class="refference">
                             <a class="element2 element2__inner">подробнее</a>
                             <a class="element1 element1__inner">забронировать</a>
                         </div>
@@ -119,7 +122,6 @@
                 
                 <div class="raitings">
                     <p class="stars">
-                        <span class="stars__item"><img src="img/svg-sedona/star.svg"></span>
                         <span class="stars__item"><img src="img/svg-sedona/star.svg"></span>
                         <span class="stars__item"><img src="img/svg-sedona/star.svg"></span>
                         <span class="stars__item"><img src="img/svg-sedona/star.svg"></span>
