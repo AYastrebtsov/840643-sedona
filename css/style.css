@@ -191,12 +191,24 @@ body {
     color: rgba(255, 255, 255, 0.3);
 }
 
+
+.modal__wrapper { 
+    position: relative;
+    max-width: 568px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 .modal {
     max-width: 568px;
-    margin-left: 316px;
-    margin-right: 316px;
     position: absolute;
     background-color: #ffffff;
+}
+
+.modal form {
+    padding-top: 55px;
+    padding-left: 55px;
+    padding-right: 55px;
 }
 
 .modal__info-input {
@@ -240,8 +252,6 @@ body {
     padding-bottom: 10px;
     margin-top: 55px;
     margin-bottom: 55px;
-    margin-left: 55px;
-    margin-right: 55px;
     line-height: 26px;
     font-size: 21px;
     text-align: center;
@@ -334,7 +344,7 @@ footer a {
     height: 23px;
     left: -33px;
 }
-    
+     
 .options {
     font-size: 16px;
     font-weight: bold;
@@ -509,7 +519,7 @@ footer a {
 .introduction::after {
     position: absolute;
     content: "";
-    background-image: url(../img/png-sedona/mask.png);
+    background-image: url(../img/svg-sedona/intro-mask.svg);
     width: 100%;
     height: 59px;
     background-position: bottom;
@@ -601,9 +611,6 @@ footer a {
 }
 
 .dates {
-    margin-top: 55px;
-    margin-left: 55px;
-    margin-right: 55px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -658,8 +665,6 @@ footer a {
 .counters {
     display: flex;
     justify-content: space-between;
-    margin-left: 55px;
-    margin-right: 55px;
 }
 
 .adult__counter {
@@ -682,6 +687,8 @@ footer a {
     border: 0px;
     height: 38px;
     width: 38px;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .modal__info-button--second {
