@@ -191,7 +191,6 @@ body {
     color: rgba(255, 255, 255, 0.3);
 }
 
-
 .modal__wrapper { 
     position: relative;
     max-width: 568px;
@@ -321,8 +320,6 @@ footer a {
     position: relative;
     margin-left: 45px;
     margin-bottom: 22px;
-    
-    
 }
 
 .option--item::before {
@@ -343,6 +340,14 @@ footer a {
     width: 27px;
     height: 23px;
     left: -33px;
+}
+
+.option--check:disabled + .option--item::before {
+    background-image: url(../img/svg-sedona/checkbox-dis.svg);
+}
+
+.option--check:disabled:checked + .option--item::before {
+    background-image: url(../img/svg-sedona/checkbox-dison.svg);
 }
      
 .options {
@@ -511,6 +516,10 @@ footer a {
     max-width: 459px;
 }
 
+.intro__image img {
+    width: 100%;
+}
+
 .introduction {
     position: relative;
     margin: 0px;
@@ -642,7 +651,6 @@ footer a {
 .calendar svg:active {
     fill: #81b3d2;
 }
-
 
 .modal__info-input {
     border: 0px;
@@ -821,7 +829,6 @@ footer a {
     padding: 10px;
 }
 
-
 .sorting-label:hover {
     color: #231f20;
 }
@@ -833,7 +840,6 @@ footer a {
 .sort:checked + .sorting-label {
     color: #81b3d2;
 }
-
 
 .accomodation {
     display: flex;
@@ -867,7 +873,6 @@ max-height: 90px;
 .accomodations__price {
     margin-left: 20px;
 }
-
 
 .raitings {
     margin-left: auto;
