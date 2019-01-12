@@ -259,7 +259,7 @@ body {
   font-size: 21px;
   font-weight: bold;
   line-height: 21px;
-  max-width: 150px;
+  max-width: 158px;
   text-align: center;
   margin-top: -11px;
   margin-bottom: 65px;
@@ -331,8 +331,9 @@ body {
 
 .calendar {
   position: absolute;
-  right: 13px;
-  top: 8px;
+  background-color: transparent;
+  right: 9px;
+  top: 9px;
   width: 21px;
   height: 22px;
   border: 0px;
@@ -340,7 +341,7 @@ body {
 }
 
 .calendar__second {
-  top: 75px;
+  top: 76px;
 }
 
 .calendar svg:hover,
