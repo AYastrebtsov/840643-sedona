@@ -339,27 +339,36 @@ body {
 }
 
 .date {
+  position: relative;
   margin-bottom: 26px;
   font-weight: bold;
 }
 
+.date::-ms-clear {
+    width: 0;
+    height: 0;
+}
+
 .date1 {
+  position: relative;
   margin-bottom: 30px;
   font-weight: bold;
+}
+
+.date1::-ms-clear {
+    width: 0;
+    height: 0;
 }
 
 .calendar {
   position: absolute;
   background-color: transparent;
   right: 1px;
+  top: 1px;
   width: 38px;
   height: 44px;
   border: 0px;
   padding: 0px;
-}
-
-.calendar__second {
-  top: 66px;
 }
 
 .calendar:hover > svg,
@@ -376,6 +385,7 @@ body {
   color: #ffffff;
   font-weight: bold;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .element1__index {
@@ -432,10 +442,18 @@ body {
   margin-left: 16px;
 }
 
+.modal__info-input-1:focus {
+  box-shadow: inset 0px 0px 0px 2px #e5e5e5;
+}
+
 .modal__info-input-2 {
   margin-left: 14px;
   padding-left: 14px;
   width: 330px;
+}
+
+.modal__info-input-2:focus {
+  box-shadow: inset 0px 0px 0px 2px #e5e5e5;
 }
 
 .modal__info-input-adult {
@@ -543,6 +561,7 @@ body {
   color: #ffffff;
   font-weight: bold;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .element2__index {
@@ -698,8 +717,15 @@ footer a {
 .type-price {
   display: flex;
   margin-top: 5px;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
 }
+
+.reference {
+  width: 257px;
+  display: flex;
+  justify-content: space-between;
+}
+
 
 .hotel-wrapper {
   display: flex;
@@ -833,6 +859,7 @@ input:focus + label {
   font: inherit;
   background: none;
   border: none;
+  line-height: 21px;
 }
 
 .range-controls {
@@ -1058,32 +1085,29 @@ input:focus + label {
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 15px;
-  padding-right: 18px;
+  padding-right: 15px;
   min-width: 110px;
 }
 
 .element2__inner {
   font-size: 14px;
   line-height: 21px;
-  padding-left: 17px;
-  padding-right: 17px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  min-width: 110px;
-  min-height: 110px;
-  text-decoration: none;
+  width: 76px;
+  padding-left: 15px;
+  padding-right: 18px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+
 }
 
 .element1__inner {
   font-size: 14px;
-  line-height: 21px;
-  padding-left: 17px;
-  padding-right: 17px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  min-width: 110px;
-  min-height: 110px;
-  text-decoration: none;
+  width: 108px;
+  padding-right: 16px;
+  padding-left: 18px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+
 }
 
 .accomodations__header {
